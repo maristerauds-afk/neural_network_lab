@@ -39,11 +39,12 @@ options.MiniBatchSize = 128;% number of images read at once
 options.Momentum = 0.9;
 % 1 - maximal contribution of previous step
 % 0 - minimal contribution of previous step
-options.InitialLearnRate = 0.5e-3;% cik ātri uztrenējas
+options.InitialLearnRate = 5e-3;% cik ātri uztrenējas
 % options.Plots = 'training-progress';
  options.Verbose = true;
  %options.LearnRateSchedule = 'piecewise';
  %options.LearnRateDropFactor = 0.1;
  %options.LearnRateDropPeriod = 4;
 %% visbeidzot trenējam tīklu
+
 net = trainNetwork(imdsTrain,layers,options);
